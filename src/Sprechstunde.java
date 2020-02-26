@@ -55,5 +55,4 @@ public class Sprechstunde extends Subject {
 	public void setEnde(int ende) {
 		this.ende = ende; notifyObserver();
 	}
-
 }
