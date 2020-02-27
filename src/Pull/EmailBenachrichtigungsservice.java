@@ -1,3 +1,5 @@
+package Pull;
+
 class EmailBenachrichtigungsservice implements Observer {
 
 	private SprechstundenListe subject;

@@ -1,11 +1,11 @@
-# SEW GK1 / Observer-Pattern (HOEK)
+# SEW GK1 / Pull.Observer-Pattern (HOEK)
 Das TGM verfügt in einem Programm über eine Liste aller Sprechstunden. Jedes **Sprechstundenobjekt** ist mit diversen Informationen (Name des Lehrers, Raumnummer, Wochentag, Beginn und Ende) ausgestattet. Die Sprechstunden ändern sich großteils einmal im Jahr, können sich aber auch während des Jahres ändern. Z.B. können auch neue Lehrer hinzukommen oder Lehrer von der Schule gehen.
 
 
 Die Sprechstundenliste wird auch auf der Website abgebildet und die Daten sollten natürlich immer aktuell sein. Leider ist die Verwaltung bei Änderungen recht mühsam, da die Liste auf der Website derzeit manuell bearbeitet wird.
 
 
-Von daher soll das System umgestellt werden, sodass ein Objekt einer **WebService-Klasse** alle Änderungen automatisch mitbekommt (im weiteren Verlauf dient diese Klasse dann zur eigentlichen Darstellung, die uns hier aber nicht weiter interessiert).
+Von daher soll das System umgestellt werden, sodass ein Objekt einer **Pull.WebService-Klasse** alle Änderungen automatisch mitbekommt (im weiteren Verlauf dient diese Klasse dann zur eigentlichen Darstellung, die uns hier aber nicht weiter interessiert).
 
 
 Zusätzlich hat nun auch der 2. Stock davon Wind bekommen und hätte gerne alle Informationen per Mail. Dazu wurde intern auch schon an eine **Email-Benachrichtigungsservice-Klasse** gedacht.

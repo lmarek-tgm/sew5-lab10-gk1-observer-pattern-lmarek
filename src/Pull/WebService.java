@@ -1,3 +1,5 @@
+package Pull;
+
 public class WebService implements Observer {
 
 	private SprechstundenListe subject;

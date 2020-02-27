@@ -1,3 +1,5 @@
+package Pull;
+
 public class Sprechstunde extends Subject {
 
 	private String lehrerName;
