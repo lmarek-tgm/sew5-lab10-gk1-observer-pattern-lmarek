@@ -1,10 +1,19 @@
+import com.sun.org.apache.bcel.internal.generic.ANEWARRAY;
+
 import java.util.ArrayList;
 
 public class SprechstundenListe extends Subject {
 
-	private ArrayList<String> sprechStundenListe;
+	private ArrayList<Sprechstunde> sprechStundenListe;
 
-	public ArrayList<String> getSprechstundenListe() {
-		return null;
+	public SprechstundenListe() { sprechStundenListe= new ArrayList<Sprechstunde>(); }
+
+	public ArrayList<Sprechstunde> getSprechstundenListe() {
+		return sprechStundenListe;
 	}
+
+	public void addSprechstunde(Sprechstunde sprechstunde){
+	    sprechStundenListe.add(sprechstunde);
+	    notifyObserver();
+    }
 }

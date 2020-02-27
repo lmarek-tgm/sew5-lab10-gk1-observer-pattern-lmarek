@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public abstract class Subject{
 
 	private ArrayList<Observer> observers;
-	public void Subject() {
+	public Subject() {
 		observers = new ArrayList<>();
 	}
 

@@ -3,12 +3,10 @@ public class Sprechstunde extends Subject {
 	private String lehrerName;
 	private String raumnummer;
 	private String wochentag;
-	private int beginn;
-	private int ende;
+	private String beginn;
+	private String ende;
 
-	private SprechstundenListe sprechstundenListe;
-
-	public void Sprechstunde() {
+	public Sprechstunde(String lehrerName, String raumnummer, String wochentag, String beginn, String ende) {
 		this.lehrerName = lehrerName;
 		this.raumnummer = raumnummer;
 		this.wochentag = wochentag;
@@ -21,7 +19,7 @@ public class Sprechstunde extends Subject {
 	}
 
 	public void setName(String name) {
-		this.lehrerName = name; notifyObserver();
+		this.lehrerName = name;
 	}
 
 	public String getRaum() {
@@ -29,7 +27,7 @@ public class Sprechstunde extends Subject {
 	}
 
 	public void setRaum(String raum) {
-		this.raumnummer = raum; notifyObserver();
+		this.raumnummer = raum;
 	}
 
 	public String getTag() {
@@ -37,22 +35,22 @@ public class Sprechstunde extends Subject {
 	}
 
 	public void setTag(String tag) {
-		this.wochentag = tag; notifyObserver();
+		this.wochentag = tag;
 	}
 
-	public int getBeginn() {
+	public String getBeginn() {
 		return this.beginn;
 	}
 
-	public void setBeginn(int beginn) {
-		this.beginn = beginn; notifyObserver();
+	public void setBeginn(String beginn) {
+		this.beginn = beginn;
 	}
 
-	public int getEnde() {
+	public String getEnde() {
 		return this.ende;
 	}
 
-	public void setEnde(int ende) {
-		this.ende = ende; notifyObserver();
+	public void setEnde(String ende) {
+		this.ende = ende;
 	}
 }
